@@ -1,1 +1,1 @@
-# nimodality-Supervised-Contrastive-Representation-Distillation-for-EEG-Based-Emotion-Recognition
+# Unimodality-Supervised-Contrastive-Representation-Distillation-for-EEG-Based-Emotion-Recognition
