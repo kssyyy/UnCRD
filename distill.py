@@ -345,7 +345,7 @@ def train(train_loader,test_loader,eval_loader,subject,args):
         elif args.model=="EEGNet":
             criterion_kd = CRDLoss(s_dim=80,t_dim=528,feat_dim=128,n_data=n_data,nce_k=nce_k)
         elif args.model=="BiHDM":
-            criterion_kd = CRDLoss(s_dim=96,n_data=n_data,nce_k=nce_k)
+            criterion_kd = CRDLoss(s_dim=96,t_dim=48,n_data=n_data,nce_k=nce_k)
         else:
             criterion_kd = CRDLoss(n_data=n_data,nce_k=nce_k)
         module_list.append(criterion_kd.embed_s)
