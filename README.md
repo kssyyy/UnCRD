@@ -18,5 +18,5 @@ python train.py --model "MLP" --save_name './ModelSave/EYE_within/' --model_name
 ```
 ## Train student model
 ```python
-python train.py --model "MLP" --loss 'unis_crd' --model_name './ModelSave/EYE_within/' --model_name "MLP" --session "4"
+python distill.py --model "MLP" --loss 'unis_crd' --model_name './ModelSave/EYE_within/' --model_name "MLP" --session "4"
 ```
