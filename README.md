@@ -7,4 +7,16 @@
 ## Requirements
 * python==3.10.0
 * torch==2.1.2
-
+  
+## Installation
+```python
+pip install -r requirements.txt
+```
+## Train train model
+```python
+python train.py --model "MLP" --save_name './ModelSave/EYE_within/' --model_name "MLP" --session "4"
+```
+## Train student model
+```python
+python train.py --model "MLP" --loss 'unis_crd' --model_name './ModelSave/EYE_within/' --model_name "MLP" --session "4"
+```
